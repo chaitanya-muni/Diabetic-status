@@ -1,0 +1,89 @@
+<!DOCTYPE html?
+<html lang = "en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Diabetic Detection</title>
+
+    </head>
+
+    <body bgcolor="#d6cbd3">
+        
+        <div align = 'center' class = 'header'>
+            <h1 align = 'center' href = "/"> Diabetic Detection Program</h1>
+            <br>
+            <br>
+        </div>
+
+        
+        <div class='container'>
+            <h2 align = 'middle'>Fill to know Diabetic status</h2>
+
+            <form align = 'center' action = "/predict" method = "post">
+                <table align = 'center' width = 1000  cellpadding  = 5>
+                    <tr>
+                        <td width = 50% align = 'right'> Pregnancies </td>
+                        <td> : </td>
+                        <td> <input id = "first" name = 'Pregnancies' type = 'number' required = 'required'> </td>
+                    </tr> 
+
+                    <tr>
+                        <td width = 50% align = 'right'> Glucose </td>
+                        <td> : </td>
+                        <td> <input id = "second" name = 'Glucose' type = 'number' required = 'required'> </td>
+                    </tr> 
+
+                    <tr>
+                        <td width = 50% align = 'right'> BP </td>
+                        <td> : </td>
+                        <td> <input id = "third" name = 'BloodPressure' type = 'number' required = 'required'> </td>
+                    </tr> 
+
+                    <tr>
+                        <td width = 50% align = 'right'> skin Thickness </td>
+                        <td> : </td>
+                        <td> <input id = "fourth" name = 'Skin Thickness' type = 'number' required = 'required'> </td>
+                    </tr> 
+
+                    <tr>
+                        <td width = 50% align = 'right'> Insulin </td>
+                        <td> : </td>
+                        <td> <input id = "fifth" name = 'Insulin' type = 'number' required = 'required'> </td>
+                    </tr> 
+
+                    <tr>
+                        <td width = 50% align = 'right'> BMI </td>
+                        <td> : </td>
+                        <td> <input id = "sixth" name = 'BMI' type = 'number' required = 'required'> </td>
+                    </tr> 
+
+                    <tr>
+                        <td width = 50% align = 'right'> DiabetesPdigreeFunction </td>
+                        <td> : </td>
+                        <td> <input id = "seventh" name = 'DiabetesPdigreeFunction' type = 'number' required = 'required'> </td>
+                    </tr> 
+
+                    <tr>
+                        <td width = 50% align = 'right'> Age </td>
+                        <td> : </td>
+                        <td> <input id = "eighth" name = 'Age' type = 'number' required = 'required'> </td>
+                    </tr> 
+                </table>  
+                
+                <button align = 'center' id = 'submit' type = 'submit'>Submit</button>
+            </form>
+            <h2 align = 'center'>{{ predicted_texts }}</h2> 
+        </div>
+
+        <br>
+        <br>
+
+        <div class = 'footer'>
+            <h4 align = 'middle'> created by Chaitanya
+            </h4>
+        </div>
+        
+
+    </body>
+
+</html>
